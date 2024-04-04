@@ -183,7 +183,7 @@ jsArrow.onclick = function() {
       <p id="typing-text"></p>
   </div>
   <video autoplay muted loop poster="#" style="filter: brightness(0.4);">
-      <!-- <source src="morphata.mp4" type="video/mp4"> -->
+      <source src="morphata.mp4" type="video/mp4">
       <!-- <source src="https://firebasestorage.googleapis.com/v0/b/morphata-87cf8.appspot.com/o/Video%2Fmorphata.mp4?alt=media&token=c2049460-be35-4ad8-ae0d-0353c170d2ab" type="video/mp4"> -->
   </video>
 </div>
