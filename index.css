@@ -1,0 +1,416 @@
+ 
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.banner video {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensure the video takes up space */
+  object-fit: cover; /* Ensure the video covers the entire container */
+}
+
+.banner .container {
+  position: absolute;
+  top: -65px;
+  left: 0;
+  bottom: 100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.5); semi-transparent background */
+}
+
+.banner .container p {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+  z-index: 1;
+  color: #b6f5b6ae; 
+  width: 800px; 
+}
+
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .banner .container p {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+    margin-bottom: 450px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner .container h2 {
+    font-size: 16px; /* Further adjust font size for even smaller screens */
+    padding: 5px; /* Further adjust padding for even smaller screens */
+  }
+}
+
+
+
+
+/* --------- section end--------- */
+
+/* ---------khidmat section start--------- */
+
+/* CSS for Card Animation */
+
+/* extra card */
+.container1 {
+position: relative;
+flex-wrap: wrap;
+justify-content: center;
+align-items: flex-start; /* Align items at the start of each flex line */
+height: 100%;
+margin: 0 6% 0 5%;
+display: flex;
+flex-direction: row;
+margin-top: 60px;
+}
+
+.card {
+overflow: hidden;
+position: relative;
+background-color: #ffffff;
+text-align: left;
+padding: 5px;
+border-radius: 0.5rem;
+width: 270px; /* Fixed width for each card */
+height: 375px;
+margin: 20px; /* Adjust the margin as needed */
+box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.header {
+padding: 1rem 1rem 1rem 1rem;
+background-color: #ffffff;
+}
+
+.image11 {
+display: flex;
+margin-left: auto;
+margin-right: auto;
+background-color: #FEE2E2;
+flex-shrink: 0;
+justify-content: center;
+align-items: center;
+width: 3rem;
+height: 1rem;
+border-radius: 9999px;
+}
+
+.image svg {
+color: #0fb81a;
+width: 1.5rem;
+height: 1.5rem;
+}
+
+.content {
+margin-top: 0.75rem;
+text-align: center;
+}
+
+.title {
+color: #111827;
+font-size: 1rem;
+font-weight: 600;
+line-height: 1.5rem;
+}
+
+.message {
+margin-top: 1rem;
+color: #6B7280;
+font-size: 0.875rem;
+line-height: 1.25rem;
+}
+
+.actions {
+margin: 1rem 1rem;
+background-color: #F9FAFB;
+}
+
+.desactivate {
+display: inline-flex;
+padding: 0.5rem 1rem;
+background-color: #0fb81a;
+color: #ffffff;
+font-size: 1rem;
+line-height: 1.5rem;
+font-weight: 500;
+justify-content: center;
+width: 100%;
+border-radius: 0.375rem;
+border-width: 1px;
+border-color: transparent;
+box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.cancel {
+display: inline-flex;
+margin-top: 0.75rem;
+padding: 0.5rem 1rem;
+background-color: #ffffff;
+color: #374151;
+font-size: 1rem;
+line-height: 1.5rem;
+font-weight: 500;
+justify-content: center;
+width: 100%;
+border-radius: 0.375rem;
+border: 1px solid #D1D5DB;
+box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* CSS for Button Animation */
+.button {
+/* position: relative; */
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.button .transition {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+transition: all 0.4s ease;
+z-index: 1;
+}
+
+.button:hover .transition {
+top: -100%;
+}
+
+.button .gradient {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(45deg, #17a319, #8d08d5);
+z-index: 0;
+transition: all 0.4s ease;
+}
+
+.button:hover .gradient {
+left: 100%;
+}
+
+/* Carousel */
+.section__header{
+  text-align: center;
+  margin-top: 120px;
+  font-family: serif;
+  font-size: 35px;
+  /* background-color: #51f47d; */
+  
+}
+
+.section__hheader{
+  text-align: center;
+  margin-top: 50px;
+  font-family: serif;
+  font-size: 35px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  height: 480px;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 400px 100px;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
+  justify-items: center;
+  background-color: #51f47d;
+}
+
+@media screen and (max-width: 600px){
+  .carousel{
+    background-color: white;
+  }
+}
+
+main#carousel {
+grid-row: 1 / 2;
+grid-column: 1 / 8;
+width: 100vw;
+height: 600px;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+transform-style: preserve-3d;
+perspective: 600px;
+--items: 5;
+--middle: 3;
+--position: 1;
+pointer-events: none;
+}
+
+div.item {
+position: absolute;
+width: 300px;
+height: 300px;
+background-color: coral;
+--r: calc(var(--position) - var(--offset));
+--abs: max(calc(var(--r) * -1), var(--r));
+transition: all 0.25s linear;
+transform: rotateY(calc(-10deg * var(--r)))
+  translateX(calc(-300px * var(--r)));
+z-index: calc((var(--position) - var(--abs)));
+}
+
+div.item:nth-of-type(1) {
+--offset: 1;
+background-color: #90f1ef;
+}
+div.item:nth-of-type(2) {
+--offset: 2;
+background-color: #ff70a6;
+}
+div.item:nth-of-type(3) {
+--offset: 3;
+background-color: #ff9770;
+}
+div.item:nth-of-type(4) {
+--offset: 4;
+background-color: #ffd670;
+}
+div.item:nth-of-type(5) {
+--offset: 5;
+background-color: #e9ff70;
+}
+
+input:nth-of-type(1) {
+grid-column: 2 / 3;
+grid-row: 2 / 3;
+}
+input:nth-of-type(1):checked ~ main#carousel {
+--position: 1;
+}
+
+input:nth-of-type(2) {
+grid-column: 3 / 4;
+grid-row: 2 / 3;
+}
+input:nth-of-type(2):checked ~ main#carousel {
+--position: 2;
+}
+
+input:nth-of-type(3) {
+grid-column: 4 /5;
+grid-row: 2 / 3;
+}
+input:nth-of-type(3):checked ~ main#carousel {
+--position: 3;
+}
+
+input:nth-of-type(4) {
+grid-column: 5 / 6;
+grid-row: 2 / 3;
+}
+input:nth-of-type(4):checked ~ main#carousel {
+--position: 4;
+}
+
+input:nth-of-type(5) {
+grid-column: 6 / 7;
+grid-row: 2 / 3;
+}
+input:nth-of-type(5):checked ~ main#carousel {
+--position: 5;
+}
+
+@media screen and (max-width: 768px){
+  .khidmat .section__hheader{
+    margin-top: 3px;
+    text-align: center;
+    font-family: serif;
+    font-size: 30px;
+  }
+
+  .container1{
+    margin-top: 20px;
+  }
+
+  .section__header{
+    margin-top: 30px;
+  }
+
+}
+
+/* gallery button */
+.button-div{
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+}
+.button1 {
+  --color: #00A97F;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: .3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+ }
+ 
+ .button1::before, .button1::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+ }
+ 
+ .button1::before {
+  top: -1em;
+  left: -1em;
+ }
+ 
+ .button1::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+ }
+ 
+ .button1:hover::before, .button1:hover::after {
+  height: 410px;
+  width: 410px;
+ }
+ 
+ .button1:hover {
+  color: rgb(10, 25, 30);
+ }
+ 
+ .button1:active {
+  filter: brightness(.8);
+ }
